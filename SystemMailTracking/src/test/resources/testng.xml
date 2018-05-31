@@ -1,0 +1,6 @@
+<suite name="My suite" >
+ <suite-files>
+   <suite-file path="./src/test/resources/SessionSuite.xml" />
+   <suite-file path="./src/test/resources/SystemEmails.xml" />
+  </suite-files>
+</suite>

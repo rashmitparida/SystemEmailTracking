@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SystemEmails]">
+  <test name="Send Optin Email(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest">
+        <methods>
+          <include name="AddNewContactOptin" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ResourceEmailTest -->
+    </classes>
+  </test> <!-- Send Optin Email(failed) -->
+  <test name="Resend Optin Email(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="ReoptinEmail" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ResourceEmailTest -->
+    </classes>
+  </test> <!-- Resend Optin Email(failed) -->
+  <test name="Send Resource Email(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest">
+        <methods>
+          <include name="ResourceEmail" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ResourceEmailTest -->
+    </classes>
+  </test> <!-- Send Resource Email(failed) -->
+</suite> <!-- Failed suite [SystemEmails] -->

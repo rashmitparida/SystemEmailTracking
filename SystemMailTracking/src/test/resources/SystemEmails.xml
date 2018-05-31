@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SystemEmails">
+
+<test name="Send Optin Email">
+    <classes>
+        <class name="SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest" ></class>  
+    </classes>
+</test>
+
+<test name="Resend Optin Email">
+    <classes>
+        <class name="SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest" ></class>  
+    </classes>
+</test>
+
+<test name="Send Resource Email">
+    <classes>
+        <class name="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest" ></class>  
+    </classes>
+</test>
+
+</suite>
+
