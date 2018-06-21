@@ -19,5 +19,11 @@
     </classes>
 </test>
 
+<test name="Broadcast Email">
+    <classes>
+        <class name="SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest" ></class>  
+    </classes>
+</test>
+
 </suite>
 

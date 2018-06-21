@@ -489,5 +489,63 @@ public class AppKeywords extends GenericKeywords{
 			reportFailure("Failed to receive Resource email");
 		}
 	}
+	
+	public void VerifyBroadcastMail()
+	{
+		try 
+		{
+			test.log(Status.INFO, " Validate Broadcast Email");
+			click("BroadCastEmails_xpath");
+			waitForPageToLoad();
+			click("UsersButton_xpath");
+			waitForPageToLoad();
+			Thread.sleep(10000);
+			Select EmailAddress = new Select(driver.findElement(By.id("searchBy")));
+			EmailAddress.selectByVisibleText("Email Address");
+			waitForPageToLoad();
+			Select contains = new Select(driver.findElement(By.xpath("//div[@id='additionalSearch']/div/div[2]/div[2]/div[1]/div[1]/select")));
+			contains.selectByVisibleText("Contains");
+			waitForPageToLoad();
+			type("BroadcastEmailAddress_xpath","BroadcastEmailAddress");
+			click("ShowFilterResultsButton_xpath");
+			waitForPageToLoad();
+			click("SendToAllUsersButton_xpath");
+			waitForPageToLoad();
+			type("BroadCastEmailSubject_xpath","BroadCastEmailSubject");
+			type("BroadCastEmailContent_xpath","BroadCastEmailContent");
+			type("BroadCastEmailTextContent_xpath","BroadCastEmailTextContent");
+			waitForPageToLoad();
+			type("BroadCastSentEmailFrom_xpath","SentEmailFrom");
+			waitForPageToLoad();
+			click("BroadCastSendButton_xpath");
+		}		
+		catch (Throwable t)
+		{
+			reportFailure("Failed to send Broadcast email");
+		}
+	}
+	
+	public void VerifyBroadcastEmailFromInbox()
+	{
+		try
+		{
+			test.log(Status.INFO, "Validating Broadcast email in mailinator");
+			type("MailinatorMailinput_xpath","Email");
+			click("MailinatorGoButton_xpath");
+			click("MailinatorInbox_xpath");
+			waitForPageToLoad();
+			String Resource_Mail=driver.findElement(By.xpath("//*[@id='InboxCtrl']/section/div/div[2]/ul/li/ul/li/div/div[2]")).getText();
+			System.out.println("Resource email has been sent as in the mailinator there are  " + Resource_Mail + " email");
+			if(Resource_Mail.equals(1))
+				test.log(Status.INFO, "Resource email has been sent successfully");
+			else
+				reportFailure("Could not find the Resource email");
+			test.log(Status.INFO, "Resource email is sent successfully");
+		}
+		catch (Throwable t)
+		{
+			reportFailure("Failed to recieve Broadcast email");
+		}
+	}
 
 }

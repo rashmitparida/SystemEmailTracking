@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ContinueToPayment</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 30 21:19:17 IST 2018</td>
+<td>Started on:</td><td>Thu Jun 14 14:24:03 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>92 seconds (92106 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (93 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,58 +76,40 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment()'><b>ContinueToPayment</b><br>Test class: SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest<br>Parameters: {ConfirmPassword=123456, Browser=Chrome, CardNumber=4242424242424242, Password=123456, Additional Notification Email=Additionnotif@mailinator.com, RepId2=TestRep2, RepId1=TestRep1, groupcode=Marketing, UserName=Automation, Runmode=Y, SuccessPaymentMessage=Congratulations! You have been upgraded to the RapidFunnel Premium version!, Phone=9.658877498E9, LastName=New Account, AccountName=Automation New Account, FirstName=Automation, PostalCode=751076, Email=Autonewaccount114@mailinator.com, CVVCode=623}</td>
-<td><div><pre>java.lang.reflect.InvocationTargetException
-	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
-	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:27)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	Object Not Found MailinatorNewAccountwithPaymentMail_xpath	Object Not Found MailinatorNewAccountwithPaymentMail_xpath, 
-	Failed to get the email confirmation for newly created account with payment	Failed to get the email confirmation for newly created account with payment
-	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
-	at SystemMailTracking.keywords.AppKeywords.VerifyEmailFromInboxNewAccountwithPayment(AppKeywords.java:232)
-	... 31 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace908722588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace908722588'><pre>java.lang.reflect.InvocationTargetException
+<td><div><pre>org.testng.SkipException: Runmode is set to NO
+	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:25)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530880511", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1530880511'><pre>org.testng.SkipException: Runmode is set to NO
+	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
-	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1181)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	Object Not Found MailinatorNewAccountwithPaymentMail_xpath	Object Not Found MailinatorNewAccountwithPaymentMail_xpath, 
-	Failed to get the email confirmation for newly created account with payment	Failed to get the email confirmation for newly created account with payment
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:48)
-	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
-	at SystemMailTracking.keywords.AppKeywords.VerifyEmailFromInboxNewAccountwithPayment(AppKeywords.java:232)
-	... 31 more
 </pre></div></td>
-<td>91</td>
-<td>SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@4566e5bd</td></tr>
+<td>0</td>
+<td>SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@6adede5</td></tr>
 </table><p>
 </body>
 </html>

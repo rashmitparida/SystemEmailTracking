@@ -142,14 +142,7 @@
     <version>3.0.1</version>
 </dependency>
 
-<dependency>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-compiler-plugin</artifactId>
-  <version>3.7.0</version>
-  <type>maven-plugin</type>
-</dependency>
-
-	</dependencies>
+</dependencies>
 
 
   <build>
@@ -165,26 +158,14 @@
           <version>3.0.2</version>
         </plugin>
         <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.7.0</version>
-           <configuration>
-                    <compilerArgs>
-                        <arg>-XDignore.symbol.file</arg>
-                    </compilerArgs>
-                    <maxmem>${java.memory}</maxmem>
-                    <fork>${java.fork}</fork>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <verbose>true</verbose>
-                    <fork>true</fork>
-                    <executable>${JAVA_1_8_HOME}/bin/javac</executable>
-                    <compilerVersion>1.8</compilerVersion>
-                    <excludes>
-                        <exclude>com\hartehanks\ntouch\ui\swing/*.java</exclude>
-                    </excludes>
-                </configuration>
-        </plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.7.0</version>
+    <configuration>
+        <release>8</release>
+        <verbose>true</verbose>
+    </configuration>
+	</plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.20.1</version>
