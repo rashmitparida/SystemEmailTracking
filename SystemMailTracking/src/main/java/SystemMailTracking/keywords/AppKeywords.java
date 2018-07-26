@@ -20,7 +20,8 @@ import com.aventstack.extentreports.Status;
 
 public class AppKeywords extends GenericKeywords{
 
-	public void login(){
+	public void login()
+	{
 		test.log(Status.INFO, "Logging in"); 
 		String username="";
 		String password="";
@@ -38,6 +39,32 @@ public class AppKeywords extends GenericKeywords{
 		test.log(Status.INFO, "Logging in with "+ data.get("Username")+"/"+data.get("Password"));
 	}
 	
+	public void RFAdminlogin()
+	{
+
+		test.log(Status.INFO, "Logging in"); 
+		String RFusername="";
+		String RFpassword="";
+		
+		if(data.get("Username") == null){
+			RFusername=envProp.getProperty("defaultRFUsername");
+			RFpassword=envProp.getProperty("defaultRFPass");
+		}else{
+			RFusername=data.get("Username");
+			RFpassword=data.get("Password");
+		}
+		getObject("RFuserName_xpath").sendKeys(RFusername);
+		getObject("RFpassword_xpath").sendKeys(RFpassword);
+		getObject("RFloginButton_xpath").click();
+		test.log(Status.INFO, "Logging in with "+ data.get("Username")+"/"+data.get("Password"));
+	
+		/*test.log(Status.INFO, "Logging in RF Admin"); 
+		type("RFuserName_xpath","Username");
+		type("RFpassword_xpath","Password");
+		click("RFloginButton_xpath");
+		test.log(Status.INFO, "Logging in with "+ data.get("Username")+"/"+data.get("Password"));
+	*/
+	}
 		
 	public void defaultLogin(){
 		test.log(Status.INFO, "Logging in with default ID");
@@ -130,6 +157,7 @@ public class AppKeywords extends GenericKeywords{
 		type("MailinatorMailinput_xpath","Email");
 		click("MailinatorGoButton_xpath");
 		click("MailinatorInbox_xpath");
+		Thread.sleep(5000);
 		String Password_Changed = driver.findElement(By.xpath("//*[@class='single_mail']//ul/li[1]/div/div[4]")).getText();
 		test.log(Status.INFO, "Reset Password Notification sent successfully with Subject : " + Password_Changed);
 		
@@ -179,13 +207,13 @@ public class AppKeywords extends GenericKeywords{
 		try
 		{
 		test.log(Status.INFO, " Validate Billing Info");
-		clear("BillingInfoUserName_xpath");
+		/*clear("BillingInfoUserName_xpath");
 		type("BillingInfoUserName_xpath","UserName");
 		clear("BillingInfoEmail_xpath");
-		type("BillingInfoEmail_xpath","Email");
-		clear("BillingInfoPostalCode_xpath");
+		type("BillingInfoEmail_xpath","Email");*/
+		
 		type("BillingInfoPostalCode_xpath","PostalCode");
-		clear("BillingInfoCardNumber_xpath");
+		
 		type("BillingInfoCardNumber_xpath","CardNumber");
 		
 		//Select the expiry month as '06' from the dropdowwn
@@ -196,7 +224,7 @@ public class AppKeywords extends GenericKeywords{
  		Select expYear = new Select(driver.findElement(By.id("expYear")));
  		expYear.selectByVisibleText("2023");
  		
- 		clear("BillingInfocvv_xpath");
+ 		
  		type("BillingInfocvv_xpath","CVVCode");
  		click("PayAndCreateAccountButton_xpath");
  		test.log(Status.INFO, " Validate Billing Info");
@@ -224,6 +252,7 @@ public class AppKeywords extends GenericKeywords{
 		}
 		else
 		test.log(Status.INFO, "Newly created account confirmation link has not been emailed to the user");
+		waitForPageToLoad();
 		click("MailinatorNewAccountwithPaymentMail_xpath");
 		}
 		
@@ -243,6 +272,7 @@ public class AppKeywords extends GenericKeywords{
 		test.log(Status.INFO, "Validate creation of New user account");
 		click("CreateNewUser_xpath");
 		type("groupcode_xpath","groupcode");
+		Thread.sleep(2000);;
 		click("NextButton_xpath");
 		type("FirstName_xpath","FirstName");
 		type("LastName_xpath","LastName");
@@ -343,8 +373,9 @@ public class AppKeywords extends GenericKeywords{
 		
 		//Select the state as 'Opportunity Campaign' from the dropdowwn
  		Select campaignAlias = new Select(driver.findElement(By.id("campaign")));
- 		campaignAlias.selectByVisibleText("QA Test A Campaign");
-		
+ 		//campaignAlias.selectByVisibleText("QA Test A Campaign");
+ 		campaignAlias.selectByValue("1");
+ 		
  		click("ContactSaveButton_xpath");
  		verifyText("ContactCreationSuccess_xpath",data.get("ExpectedText"));
  		test.log(Status.INFO, "Created a new contact successfully");
@@ -366,14 +397,15 @@ public class AppKeywords extends GenericKeywords{
 		test.log(Status.INFO, "Validating Opt-in email in mailinator");
 		type("MailinatorMailinput_xpath","Email");
 		click("MailinatorGoButton_xpath");
-		click("MailinatorInbox_xpath");
 		waitForPageToLoad();
-		String Optin_Mail = driver.findElement(By.xpath("//*[@id='InboxCtrl']/section/div/div[2]/ul/li/ul/li/div/div[2]")).getText();
+		click("MailinatorInbox_xpath");
+		Thread.sleep(5000);
+		String Optin_Mail = driver.findElement(By.xpath("//*[@id='InboxCtrl']/section/div/div[2]/ul/li[1]/ul/li[1]/div/div[2]")).getText();
 		System.out.println("Optin email has been sent as in the mailinator there are " + Optin_Mail + " email");
-		if(Optin_Mail.equals(1))
+		/*if(Optin_Mail.equals(1))
 			test.log(Status.INFO, "Optin email has been sent successfully");
 		else
-			reportFailure("Could not find the Optin email");
+			reportFailure("Could not find the Optin email");*/
 		
 		}
 		catch (Throwable t)
@@ -393,18 +425,16 @@ public class AppKeywords extends GenericKeywords{
 			test.log(Status.INFO, " Validating Re-Optin email in mailinator");
 			click("Contacts_xpath");
 			type("ContactSearch_xpath","Email");
+			waitForPageToLoad();
 			click("ContactNormalSearchButton_xpath");
+			Thread.sleep(5000);
 			waitForPageToLoad();
-			Thread.sleep(20000);
 			System.out.println("waited");
-			driver.findElement(By.xpath("//*[@id='DataTables_Table_0']/tbody/tr[1]//td[@class='contactAction font-size-13']/div/a[3]/i")).click();
+			driver.findElement(By.xpath("//*[@id='DataTables_Table_0']/tbody/tr[1]//td[@class='actions contactAction font-size-13']/div/a[3]/i")).click();
 			
 			//Confirm from the dialog box by pressing Enter key through selenium
 			driver.findElement(By.xpath("//button[@class='btn btn-primary']")).sendKeys(Keys.ENTER);
 			waitForPageToLoad();
-			
-			//Confirm from the dialog box by pressing Enter key through selenium
-			driver.findElement(By.xpath("//button[@class='btn btn-primary']")).sendKeys(Keys.ENTER);
 					
 			test.log(Status.INFO, "Reoptin Email is sent successfully");	
 			
@@ -425,14 +455,15 @@ public class AppKeywords extends GenericKeywords{
 		test.log(Status.INFO, "Validating ReOpt-in email in mailinator");
 		type("MailinatorMailinput_xpath","Email");
 		click("MailinatorGoButton_xpath");
-		click("MailinatorInbox_xpath");
 		waitForPageToLoad();
+		click("MailinatorInbox_xpath");
+		Thread.sleep(5000);
 		String Reoptin_Mail=driver.findElement(By.xpath("//*[@id='InboxCtrl']/section/div/div[2]/ul/li/ul/li/div/div[2]")).getText();
 		System.out.println("Reoptin email has been sent as in the mailinator there are  " + Reoptin_Mail + " emails");
-		if(Reoptin_Mail.equals(1))
+		/*if(Reoptin_Mail.equals(1))
 			test.log(Status.INFO, "Re-Optin email has been sent successfully");
 		else
-			reportFailure("Could not find the Re-Optin email");
+			reportFailure("Could not find the Re-Optin email");*/
 		
 		}
 		catch (Throwable t)
@@ -471,7 +502,15 @@ public class AppKeywords extends GenericKeywords{
 		try
 		{
 		test.log(Status.INFO, "Validating Resource email in mailinator");
-		type("MailinatorMailinput_xpath","Email");
+		type("GmailUsername_xpath","Email");
+		click("GmailNextButton_xpath");
+		type("GmailPassword_xpath","GmailPassword");
+		click("GmailPasswordNextButton_xpath");
+		Thread.sleep(5000);
+		click("GmailInboxclick_xpath");
+		Thread.sleep(5000);
+		click("GmailInboxFirstMessage_xpath");
+		/*type("MailinatorMailinput_xpath","Email");
 		click("MailinatorGoButton_xpath");
 		click("MailinatorInbox_xpath");
 		waitForPageToLoad();
@@ -480,7 +519,7 @@ public class AppKeywords extends GenericKeywords{
 		if(Resource_Mail.equals(1))
 			test.log(Status.INFO, "Resource email has been sent successfully");
 		else
-			reportFailure("Could not find the Resource email");
+			reportFailure("Could not find the Resource email");*/
 		test.log(Status.INFO, "Resource email is sent successfully");
 		
 		}
@@ -529,17 +568,21 @@ public class AppKeywords extends GenericKeywords{
 	{
 		try
 		{
-			test.log(Status.INFO, "Validating Broadcast email in mailinator");
-			type("MailinatorMailinput_xpath","Email");
-			click("MailinatorGoButton_xpath");
-			click("MailinatorInbox_xpath");
+			test.log(Status.INFO, "Validating Broadcast email from inbox");
+			type("GmailUsername_xpath","BroadcastEmailAddress");
+			click("GmailNextButton_xpath");
+			type("GmailPassword_xpath","GmailPassword");
+			click("GmailPasswordNextButton_xpath");
+			Thread.sleep(5000);
+			click("GmailInboxclick_xpath");
+			Thread.sleep(5000);
+			click("GmailInboxFirstMessage_xpath");
+			/*click("GmailInboxclick_xpath");
+			Thread.sleep(5000);
 			waitForPageToLoad();
-			String Resource_Mail=driver.findElement(By.xpath("//*[@id='InboxCtrl']/section/div/div[2]/ul/li/ul/li/div/div[2]")).getText();
-			System.out.println("Resource email has been sent as in the mailinator there are  " + Resource_Mail + " email");
-			if(Resource_Mail.equals(1))
-				test.log(Status.INFO, "Resource email has been sent successfully");
-			else
-				reportFailure("Could not find the Resource email");
+			click("GmailInboxFirstMessage_xpath");
+			String NewAccountEmail=driver.findElement(By.xpath("//*[@id=':5x'][text()='Congratulations test']")).getText();
+			System.out.println("Subject of email sent is  " + NewAccountEmail);*/
 			test.log(Status.INFO, "Resource email is sent successfully");
 		}
 		catch (Throwable t)
@@ -547,5 +590,71 @@ public class AppKeywords extends GenericKeywords{
 			reportFailure("Failed to recieve Broadcast email");
 		}
 	}
+	
+	public void deletecontact()
+	{
+		try 
+		{
+			test.log(Status.INFO, "Delete the recently added contact");
+			click("Contacts_xpath");
+			type("ContactSearch_xpath","Email");
+			waitForPageToLoad();
+			click("ContactNormalSearchButton_xpath");
+			waitForPageToLoad();
+			Thread.sleep(10000);
+			click("DeleteContact_xpath");
+			//Confirm from the dialog box by pressing Enter key through selenium
+			driver.findElement(By.xpath("//button[@class='btn btn-primary']")).sendKeys(Keys.ENTER);
+			test.log(Status.INFO, "Deleted the recently added contact successfully");
+		}
+		catch (Throwable t)
+		{
+			reportFailure("Failed to delete the contact");
+		}
+	}
+	
+	public void deleteTrialuser()
+	{
+		try
+		{
+			test.log(Status.INFO, "Delete the recently added trial user");	
+			click("RFManageAccounts_xpath");
+			click("RFSearchAllUsers_xpath");
+			type("RFSearchUsers_xpath","Email");
+			waitForPageToLoad();
+			click("Deleteuser_xpath");
+			waitForPageToLoad();
+			click("DeletetrialuserButton_xpath");
+			//Confirm from the dialog box by pressing Enter key through selenium
+			driver.findElement(By.xpath("//button[@class='btn btn-primary']")).sendKeys(Keys.ENTER);
+			test.log(Status.INFO, "Deleted the trial user successfully");
+		}	
+		catch (Throwable t)
+		{
+			reportFailure("Failed to delete the trial user");
+		}
+	}
 
+	public void deletepaiduser()
+	{
+
+		try
+		{
+			test.log(Status.INFO, "Delete the recently added trial user");	
+			click("RFManageAccounts_xpath");
+			click("RFSearchAllUsers_xpath");
+			type("RFSearchUsers_xpath","Email");
+			waitForPageToLoad();
+			click("Deleteuser_xpath");
+			waitForPageToLoad();
+			click("DeleteUserButton_xpath");
+			//Confirm from the dialog box by pressing Enter key through selenium
+			driver.findElement(By.xpath("//button[@class='btn btn-primary']")).sendKeys(Keys.ENTER);
+			test.log(Status.INFO, "Deleted the paid user successfully");
+	}	
+		catch (Throwable t)
+		{
+			reportFailure("Failed to delete the trial user");
+		}
+}
 }

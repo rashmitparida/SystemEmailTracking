@@ -1,3 +1,4 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="My suite" >
  <suite-files>
    <suite-file path="./src/test/resources/SessionSuite.xml" />

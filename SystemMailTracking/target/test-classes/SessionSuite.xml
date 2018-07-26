@@ -24,4 +24,16 @@
     </classes>
 </test>
 
+<test name="deletepaiduser">
+    <classes>
+        <class name="SystemMailTracking.testcases.SessionSuite.deletepaiduser" ></class>  
+    </classes>
+</test>
+
+<test name="deleteTrialuser">
+    <classes>
+        <class name="SystemMailTracking.testcases.SessionSuite.deleteTrialuser" ></class>  
+    </classes>
+</test>
+
 </suite>

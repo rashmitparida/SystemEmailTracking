@@ -25,5 +25,11 @@
     </classes>
 </test>
 
+<test name="Delete Contact">
+    <classes>
+        <class name="SystemMailTracking.testcases.SystemEmails.deletecontact" ></class>  
+    </classes>
+</test>
+
 </suite>
 
