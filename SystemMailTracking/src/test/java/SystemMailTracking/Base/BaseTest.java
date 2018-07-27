@@ -55,8 +55,8 @@ public class BaseTest {
 		}
 		// init the xls file
 		// how do i come to know the suite ?
-		System.out.println(envProp.getProperty(suiteName + "_xls"));
-		xls = new Xls_Reader(envProp.getProperty(suiteName + "_xls"));
+		System.out.println(System.getProperty("user.dir") + envProp.getProperty(suiteName + "_xls"));
+		xls = new Xls_Reader(System.getProperty("user.dir") + envProp.getProperty(suiteName + "_xls"));
 
 		// init DS
 		ds = new DriverScript();
