@@ -54,6 +54,7 @@ public class BaseTest {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println("Execption" + e.getMessage());
 		}
 		// init the xls file
 		// how do i come to know the suite ?
