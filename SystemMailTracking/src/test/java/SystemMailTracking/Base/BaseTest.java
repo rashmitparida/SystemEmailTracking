@@ -46,7 +46,7 @@ public class BaseTest {
 							+ "/src/test/resources/env.properties");
 			prop.load(fs);// init env.properties
 			String env = prop.getProperty("env");
-			System.out.println("env");
+			System.out.println(env);
 			fs = new FileInputStream(System.getProperty("user.dir")
 					+ "/src/test/resources/" + env + ".properties");
 			
