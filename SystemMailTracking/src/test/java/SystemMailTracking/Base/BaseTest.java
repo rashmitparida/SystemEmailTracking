@@ -48,6 +48,8 @@ public class BaseTest {
 			String env = prop.getProperty("env");
 			fs = new FileInputStream(System.getProperty("user.dir")
 					+ "/src/test/resources/" + env + ".properties");
+			
+			System.out.println(fs);
 			envProp.load(fs);
 
 		} catch (Exception e) {
