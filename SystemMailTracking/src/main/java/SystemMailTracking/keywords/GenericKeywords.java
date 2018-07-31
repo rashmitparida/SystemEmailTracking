@@ -118,7 +118,7 @@ public class GenericKeywords {
 				System.setProperty("webdriver.gecko.driver", "C:\\Software\\geckodriver-v0.19.0-win64\\geckodriver.exe");
 				driver = new FirefoxDriver();
 			}else if(browser.equals("Chrome")){
-				System.setProperty("webdriver.chrome.driver", "C:\\Software\\chromedriver_win32 (3)\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 				// init options
 				driver = new ChromeDriver();
 			}else if(browser.equals("IE")){
