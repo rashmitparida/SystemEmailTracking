@@ -43,20 +43,24 @@ public class BaseTest {
 		try {
 			FileInputStream fs = new FileInputStream(
 					System.getProperty("user.dir")
-							+ "//src//test//resources//env.properties");
+							+ "/src/test/resources/env.properties");
 			prop.load(fs);// init env.properties
 			String env = prop.getProperty("env");
+			System.out.println(env);
 			fs = new FileInputStream(System.getProperty("user.dir")
-					+ "//src//test//resources//" + env + ".properties");
+					+ "/src/test/resources/" + env + ".properties");
+			
+			System.out.println(fs);
 			envProp.load(fs);
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			System.out.println("Execption" + e.getLocalizedMessage());
 		}
 		// init the xls file
 		// how do i come to know the suite ?
-		System.out.println(envProp.getProperty(suiteName + "_xls"));
-		xls = new Xls_Reader(envProp.getProperty(suiteName + "_xls"));
+		System.out.println(System.getProperty("user.dir") + envProp.getProperty(suiteName + "_xls"));
+		xls = new Xls_Reader(System.getProperty("user.dir") + envProp.getProperty(suiteName + "_xls"));
 
 		// init DS
 		ds = new DriverScript();

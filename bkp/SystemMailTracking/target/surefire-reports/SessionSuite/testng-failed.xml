@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SessionSuite]">
+  <test name="ForgotPassword(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.deleteTrialuser">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deleteTrialuser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.deletepaiduser">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deletepaiduser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.LoginTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase">
+        <methods>
+          <include name="ForgotPasswordTest" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase -->
+      <class name="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest -->
+    </classes>
+  </test> <!-- ForgotPassword(failed) -->
+  <test name="CreateNewAccount(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.deleteTrialuser">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deleteTrialuser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.deletepaiduser">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deletepaiduser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.LoginTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase -->
+      <class name="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest">
+        <methods>
+          <include name="CreateNewAccount" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest -->
+    </classes>
+  </test> <!-- CreateNewAccount(failed) -->
+  <test name="ContinueToPayment(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.deleteTrialuser">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deleteTrialuser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.deletepaiduser">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deletepaiduser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.LoginTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="ContinueToPayment" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest -->
+    </classes>
+  </test> <!-- ContinueToPayment(failed) -->
+  <test name="deletepaiduser(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.deleteTrialuser">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deleteTrialuser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.deletepaiduser">
+        <methods>
+          <include name="deletepaiduserTest" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deletepaiduser -->
+      <class name="SystemMailTracking.testcases.SessionSuite.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.LoginTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase -->
+      <class name="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest -->
+    </classes>
+  </test> <!-- deletepaiduser(failed) -->
+</suite> <!-- Failed suite [SessionSuite] -->

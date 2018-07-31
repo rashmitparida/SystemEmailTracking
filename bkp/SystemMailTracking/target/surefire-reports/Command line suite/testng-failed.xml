@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest">
+        <methods>
+          <include name="CreateNewAccount"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest">
+        <methods>
+          <include name="ResourceEmail"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ResourceEmailTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest">
+        <methods>
+          <include name="ReoptinEmail"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest">
+        <methods>
+          <include name="ContinueToPayment"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest -->
+      <class name="SystemMailTracking.Base.BaseTest">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- SystemMailTracking.Base.BaseTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase">
+        <methods>
+          <include name="ForgotPasswordTest"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase -->
+      <class name="SystemMailTracking.testcases.SessionSuite.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.LoginTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest">
+        <methods>
+          <include name="AddNewContactOptin"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest -->
+      <class name="SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest">
+        <methods>
+          <include name="BroadCastEmail"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest -->
+      <class name="SystemMailTracking.testcases.SessionSuite.RFAdminloginTest">
+        <methods>
+          <include name="RFAdminlogin"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.RFAdminloginTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

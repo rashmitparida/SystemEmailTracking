@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 465.014 sec <<< FAILURE! - in TestSuite
+ForgotPasswordTest(SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase)  Time elapsed: 12.43 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase.ForgotPasswordTest(ForgotPasswordTestCase.java:28)
+Caused by: org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-TU76DCC', ip: '192.168.43.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\RASHMI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 0c2eee801e903d04c018d5a87c94066e
+	at SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase.ForgotPasswordTest(ForgotPasswordTestCase.java:28)
+
+CreateNewAccount(SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest)  Time elapsed: 36.851 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest.CreateNewAccount(CreateNewAccountTest.java:27)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Failed to get the email confirmation for newly created account
+	at SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest.CreateNewAccount(CreateNewAccountTest.java:27)
+
+ContinueToPayment(SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest)  Time elapsed: 46.18 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:24)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found BillingInfoPostalCode_xpath,
+	Failed to do successful payment during account creation
+	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:24)
+
+deletepaiduserTest(SystemMailTracking.testcases.SessionSuite.deletepaiduser)  Time elapsed: 46.244 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.deletepaiduser.deletepaiduserTest(deletepaiduser.java:24)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found DeleteUserButton_xpath,
+	Failed to delete the trial user
+	at SystemMailTracking.testcases.SessionSuite.deletepaiduser.deletepaiduserTest(deletepaiduser.java:24)
+
+ResourceEmail(SystemMailTracking.testcases.SystemEmails.ResourceEmailTest)  Time elapsed: 54.02 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SystemEmails.ResourceEmailTest.ResourceEmail(ResourceEmailTest.java:24)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found GmailInboxclick_xpath,
+	Failed to receive Resource email
+	at SystemMailTracking.testcases.SystemEmails.ResourceEmailTest.ResourceEmail(ResourceEmailTest.java:24)
+
+BroadCastEmail(SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest)  Time elapsed: 72.675 sec  <<< FAILURE!
+java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest.BroadCastEmail(BroadCastEmailTest.java:27)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found GmailInboxclick_xpath,
+	Failed to recieve Broadcast email
+	at SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest.BroadCastEmail(BroadCastEmailTest.java:27)
+

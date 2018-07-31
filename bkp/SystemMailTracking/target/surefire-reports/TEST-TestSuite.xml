@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="465.014" tests="11" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\bin"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Rashmitalocalgit\localgitrep\SystemMailTracking"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Rashmitalocalgit\localgitrep\SystemMailTracking"/>
+    <property name="java.runtime.version" value="1.8.0_151-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\RASHMI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Software\apache-maven-3.5.2\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;D:\SeleniumStuffs\apache-ant-1.9.4-bin\apache-ant-1.9.4\bin;C:\Software\apache-maven-3.5.2\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\nodejs\;C:\Users\Rashmita6\AppData\Local\Android\Sdk\tools;C:\Users\Rashmita6\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\System32\OpenSSH\;&quot;C:\Users\Rashmita6\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\bin&quot;;C:\Users\Rashmita6\AppData\Roaming\npm;C:\Users\Rashmita6\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Software\apache-maven-3.5.2\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Software\apache-maven-3.5.2\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Rashmita6"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Rashmita6"/>
+    <property name="java.class.path" value="C:\Software\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_151\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_151\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Software\apache-maven-3.5.2\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="loginTest" classname="SystemMailTracking.testcases.SessionSuite.LoginTest" time="14.811"/>
+  <testcase name="ForgotPasswordTest" classname="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase" time="12.43">
+    <failure type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase.ForgotPasswordTest(ForgotPasswordTestCase.java:28)
+Caused by: org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-TU76DCC', ip: '192.168.43.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\RASHMI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 0c2eee801e903d04c018d5a87c94066e
+	at SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase.ForgotPasswordTest(ForgotPasswordTestCase.java:28)
+</failure>
+    <system-out><![CDATA[*** ForgotPasswordTestCase
+D:\Rashmitalocalgit\localgitrep\SystemMailTracking\Files\SessionSuite.xlsx
+Inside data Provider ForgotPasswordTest
+RFAdminlogin
+Row Number of test is 9
+Total Cols - 6
+Total Rows 1
+{NewPassword=r123456789, Runmode=Y, ConfirmPassword=r123456789, ValidateText=An email has been sent to your email account with instructions to reset your password. Please check Junk/Spam folders for this message and wait up to 10 minutes for it., Email=Automationdonotuse@mailinator.com, Browser=Chrome}
+----------------
+Running FP
+Rows 49
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 47883
+Only local connections are allowed.
+Jul 31, 2018 2:51:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="CreateNewAccount" classname="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest" time="36.851">
+    <failure type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest.CreateNewAccount(CreateNewAccountTest.java:27)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Failed to get the email confirmation for newly created account
+	at SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest.CreateNewAccount(CreateNewAccountTest.java:27)
+</failure>
+    <system-out><![CDATA[*** CreateNewAccountTest
+D:\Rashmitalocalgit\localgitrep\SystemMailTracking\Files\SessionSuite.xlsx
+Inside data Provider CreateNewAccount
+RFAdminlogin
+Row Number of test is 13
+Total Cols - 13
+Total Rows 1
+{ConfirmPassword=password@12, RepId2=TestRep2, RepId1=TestRep1, ValidateText=Your user account has been created you may now login to the RapidFunnel app.If you have not downloaded the app please do so through the Apple App Store or Google Play. You can also login online at my.prospectbylegalshield.com, Runmode=Y, Phone=9658877498, Additional Notification Email=Additionnotif@mailinator.com, Email=Autonewuser1@mailinator.com, Password=password@12, groupcode=qiRUR5, LastName=New Account, FirstName=Automation, Browser=Chrome}
+----------------
+Rows 49
+complete
+0
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 11297
+Only local connections are allowed.
+Jul 31, 2018 2:51:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 32826
+Only local connections are allowed.
+Jul 31, 2018 2:52:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="ContinueToPayment" classname="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest" time="46.18">
+    <failure type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:24)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found BillingInfoPostalCode_xpath,
+	Failed to do successful payment during account creation
+	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:24)
+</failure>
+    <system-out><![CDATA[*** ContinueToPaymentTest
+D:\Rashmitalocalgit\localgitrep\SystemMailTracking\Files\SessionSuite.xlsx
+Inside data Provider ContinueToPayment
+RFAdminlogin
+Row Number of test is 17
+Total Cols - 18
+Total Rows 1
+{ConfirmPassword=123456, Browser=Chrome, CardNumber=4242424242424242, Password=123456, Additional Notification Email=Additionnotif@mailinator.com, RepId2=TestRep2, RepId1=TestRep1, groupcode=qiRUR5, UserName=Automation, Runmode=Y, SuccessPaymentMessage=Congratulations! You have been upgraded to the RapidFunnel Premium version!, Phone=9658877498, LastName=New Account, AccountName=Automation New Account, FirstName=Automation, PostalCode=751076, Email=Autonewuser2@mailinator.com, CVVCode=623}
+----------------
+Rows 49
+complete
+0
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 22717
+Only local connections are allowed.
+Jul 31, 2018 2:52:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="deletepaiduserTest" classname="SystemMailTracking.testcases.SessionSuite.deletepaiduser" time="46.244">
+    <failure type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SessionSuite.deletepaiduser.deletepaiduserTest(deletepaiduser.java:24)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found DeleteUserButton_xpath,
+	Failed to delete the trial user
+	at SystemMailTracking.testcases.SessionSuite.deletepaiduser.deletepaiduserTest(deletepaiduser.java:24)
+</failure>
+    <system-out><![CDATA[*** deletepaiduser
+D:\Rashmitalocalgit\localgitrep\SystemMailTracking\Files\SessionSuite.xlsx
+Inside data Provider deletepaiduserTest
+RFAdminlogin
+Row Number of test is 25
+Total Cols - 3
+Total Rows 1
+{Runmode=Y, Email=Autonewuser2@mailinator.com, Browser=Chrome}
+----------------
+Rows 49
+complete
+27
+20
+14
+0
+complete
+0
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 35658
+Only local connections are allowed.
+Jul 31, 2018 2:53:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="deleteTrialuserTest" classname="SystemMailTracking.testcases.SessionSuite.deleteTrialuser" time="30.237"/>
+  <testcase name="AddNewContactOptin" classname="SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest" time="51.966"/>
+  <testcase name="ReoptinEmail" classname="SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest" time="48.629"/>
+  <testcase name="ResourceEmail" classname="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest" time="54.02">
+    <failure type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SystemEmails.ResourceEmailTest.ResourceEmail(ResourceEmailTest.java:24)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found GmailInboxclick_xpath,
+	Failed to receive Resource email
+	at SystemMailTracking.testcases.SystemEmails.ResourceEmailTest.ResourceEmail(ResourceEmailTest.java:24)
+</failure>
+    <system-out><![CDATA[*** ResourceEmailTest
+D:\Rashmitalocalgit\localgitrep\SystemMailTracking\Files\SystemEmails.xlsx
+Inside data Provider ResourceEmail
+AddNewContactOptin
+Row Number of test is 9
+Total Cols - 6
+Total Rows 1
+{GmailPassword=password@12, Password=r123456789, Runmode=Y, UserName=Automationdonotuse@mailinator.com, Email=xponoacc@gmail.com, Browser=Chrome}
+----------------
+Rows 38
+complete
+0
+complete
+1
+0
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 43128
+Only local connections are allowed.
+Jul 31, 2018 2:56:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 15700
+Only local connections are allowed.
+Jul 31, 2018 2:56:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="BroadCastEmail" classname="SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest" time="72.675">
+    <failure type="java.lang.reflect.InvocationTargetException">java.lang.reflect.InvocationTargetException
+	at SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest.BroadCastEmail(BroadCastEmailTest.java:27)
+Caused by: java.lang.AssertionError: 
+The following asserts failed:
+	Object Not Found GmailInboxclick_xpath,
+	Failed to recieve Broadcast email
+	at SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest.BroadCastEmail(BroadCastEmailTest.java:27)
+</failure>
+    <system-out><![CDATA[*** BroadCastEmailTest
+D:\Rashmitalocalgit\localgitrep\SystemMailTracking\Files\SystemEmails.xlsx
+Inside data Provider BroadCastEmail
+AddNewContactOptin
+Row Number of test is 13
+Total Cols - 8
+Total Rows 1
+{GmailPassword=password@12, BroadCastEmailTextContent=Test Content Automation, BroadcastEmailAddress=xponoacc@gmail.com, SentEmailFrom=Rfsupporttest@mailinator.com, Runmode=Y, BroadCastEmailSubject=Test Automation Subject, BroadCastEmailContent=Test Automation Content, Browser=Chrome}
+----------------
+Rows 38
+complete
+0
+complete
+0
+complete
+0
+complete
+0
+complete
+1
+0
+complete
+1
+1
+0
+complete
+0
+complete
+0
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 29605
+Only local connections are allowed.
+Jul 31, 2018 2:57:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 9682
+Only local connections are allowed.
+Jul 31, 2018 2:57:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="deletecontactTest" classname="SystemMailTracking.testcases.SystemEmails.deletecontact" time="36.896"/>
+</testsuite>
