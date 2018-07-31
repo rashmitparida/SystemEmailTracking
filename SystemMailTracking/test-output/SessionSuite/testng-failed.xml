@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SessionSuite]">
+  <test thread-count="5" name="Login Test(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.LoginTest">
+        <methods>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test thread-count="5" name="ForgotPassword(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase">
+        <methods>
+          <include name="ForgotPasswordTest" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase -->
+    </classes>
+  </test> <!-- ForgotPassword(failed) -->
+  <test thread-count="5" name="CreateNewAccount(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest">
+        <methods>
+          <include name="CreateNewAccount" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest -->
+    </classes>
+  </test> <!-- CreateNewAccount(failed) -->
   <test thread-count="5" name="ContinueToPayment(failed)">
     <classes>
       <class name="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest">
@@ -13,4 +49,28 @@
       </class> <!-- SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest -->
     </classes>
   </test> <!-- ContinueToPayment(failed) -->
+  <test thread-count="5" name="deletepaiduser(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.deletepaiduser">
+        <methods>
+          <include name="deletepaiduserTest" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deletepaiduser -->
+    </classes>
+  </test> <!-- deletepaiduser(failed) -->
+  <test thread-count="5" name="deleteTrialuser(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SessionSuite.deleteTrialuser">
+        <methods>
+          <include name="deleteTrialuserTest" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deleteTrialuser -->
+    </classes>
+  </test> <!-- deleteTrialuser(failed) -->
 </suite> <!-- Failed suite [SessionSuite] -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 26 08:54:12 IST 2018</td>
+<td>Started on:</td><td>Tue Jul 31 14:07:10 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13421 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (116 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment()'><b>ContinueToPayment</b><br>Test class: SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest<br>Parameters: {ConfirmPassword=123456, AccountName=Automation New Account, Runmode=Y, Email=Autonewuser2@mailinator.com, UserName=Automation, CVVCode=623, Password=123456, groupcode=TG1, LastName=New Account, FirstName=Automation, CardNumber=4242424242424242, PostalCode=751076, Browser=Chrome}</td>
+<td title='SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment()'><b>ContinueToPayment</b><br>Test class: SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest<br>Parameters: {ConfirmPassword=123456, Browser=Chrome, CardNumber=4242424242424242, Password=123456, Additional Notification Email=Additionnotif@mailinator.com, RepId2=TestRep2, RepId1=TestRep1, groupcode=qiRUR5, UserName=Automation, Runmode=Y, SuccessPaymentMessage=Congratulations! You have been upgraded to the RapidFunnel Premium version!, Phone=9658877498, LastName=New Account, AccountName=Automation New Account, FirstName=Automation, PostalCode=751076, Email=Autonewuser2@mailinator.com, CVVCode=623}</td>
 <td><div><pre>java.lang.reflect.InvocationTargetException
 	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
 	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:24)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	Failed to do payment during account creation
-	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
-	at SystemMailTracking.keywords.AppKeywords.VerifyNewAccountwithPayment(AppKeywords.java:200)
-	... 32 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1959708563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1959708563'><pre>java.lang.reflect.InvocationTargetException
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: D:\usr\local\bin\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at SystemMailTracking.keywords.GenericKeywords.openBrowser(GenericKeywords.java:123)
+	... 31 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2108297149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2108297149'><pre>java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -111,22 +117,26 @@ Caused by: java.lang.AssertionError: The following asserts failed:
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 	at org.testng.TestNG.runSuites(TestNG.java:1049)
 	at org.testng.TestNG.run(TestNG.java:1017)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	Failed to do payment during account creation
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
-	at SystemMailTracking.keywords.AppKeywords.VerifyNewAccountwithPayment(AppKeywords.java:200)
-	... 32 more
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: D:\usr\local\bin\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at SystemMailTracking.keywords.GenericKeywords.openBrowser(GenericKeywords.java:123)
+	... 31 more
 </pre></div></td>
-<td>12</td>
-<td>SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@20322d26</td></tr>
+<td>0</td>
+<td>SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@6adede5</td></tr>
 </table><p>
 </body>
 </html>

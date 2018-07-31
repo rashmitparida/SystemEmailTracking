@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 26 08:57:11 IST 2018</td>
+<td>Started on:</td><td>Tue Jul 31 14:06:44 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42981 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (89 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,14 +79,19 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.reflect.InvocationTargetException
 	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
 	at SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest.BroadCastEmail(BroadCastEmailTest.java:27)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	Object Not Found UsersButton_xpath,
-	Failed to send Broadcast email
-	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
-	at SystemMailTracking.keywords.AppKeywords.VerifyBroadcastMail(AppKeywords.java:563)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: D:\usr\local\bin\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at SystemMailTracking.keywords.GenericKeywords.openBrowser(GenericKeywords.java:123)
 	... 32 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace749100260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace749100260'><pre>java.lang.reflect.InvocationTargetException
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2044282225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2044282225'><pre>java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -119,16 +124,20 @@ Caused by: java.lang.AssertionError: The following asserts failed:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.AssertionError: The following asserts failed:
-	Object Not Found UsersButton_xpath,
-	Failed to send Broadcast email
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
-	at SystemMailTracking.keywords.AppKeywords.VerifyBroadcastMail(AppKeywords.java:563)
+Caused by: java.lang.IllegalStateException: The driver executable does not exist: D:\usr\local\bin\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at SystemMailTracking.keywords.GenericKeywords.openBrowser(GenericKeywords.java:123)
 	... 32 more
 </pre></div></td>
-<td>42</td>
-<td>SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest@56235b8e</td></tr>
+<td>0</td>
+<td>SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest@3e9b1010</td></tr>
 </table><p>
 </body>
 </html>

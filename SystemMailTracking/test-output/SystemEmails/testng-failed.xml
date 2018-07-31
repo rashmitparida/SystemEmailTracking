@@ -25,6 +25,18 @@
       </class> <!-- SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest -->
     </classes>
   </test> <!-- Resend Optin Email(failed) -->
+  <test thread-count="5" name="Send Resource Email(failed)">
+    <classes>
+      <class name="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest">
+        <methods>
+          <include name="ResourceEmail" invocation-numbers="0"/>
+          <include name="initTest"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ResourceEmailTest -->
+    </classes>
+  </test> <!-- Send Resource Email(failed) -->
   <test thread-count="5" name="Broadcast Email(failed)">
     <classes>
       <class name="SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest">

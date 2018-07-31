@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="6" ignored="0" total="11" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My suite" duration-ms="0" started-at="2018-07-31T09:29:09Z" finished-at="2018-07-31T09:29:09Z">
+    <groups>
+    </groups>
+  </suite> <!-- My suite -->
+  <suite name="SessionSuite" duration-ms="193853" started-at="2018-07-31T09:21:25Z" finished-at="2018-07-31T09:24:39Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="17653" started-at="2018-07-31T09:21:25Z" finished-at="2018-07-31T09:21:42Z">
+      <class name="SystemMailTracking.testcases.SessionSuite.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.LoginTest@3fb6a447]" name="init" is-config="true" duration-ms="601" started-at="2018-07-31T14:51:25Z" finished-at="2018-07-31T14:51:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.LoginTest@3fb6a447]" name="initTest" is-config="true" duration-ms="155" started-at="2018-07-31T14:51:25Z" finished-at="2018-07-31T14:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SessionSuite.LoginTest@3fb6a447]" name="loginTest" duration-ms="14814" started-at="2018-07-31T14:51:26Z" data-provider="getData" finished-at="2018-07-31T14:51:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Automationdonotuse@mailinator.com, ExpectedResult=Success, Password=r123456789, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.LoginTest@3fb6a447]" name="quit" is-config="true" duration-ms="2055" started-at="2018-07-31T14:51:40Z" finished-at="2018-07-31T14:51:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="ForgotPassword" duration-ms="13095" started-at="2018-07-31T09:21:43Z" finished-at="2018-07-31T09:21:56Z">
+      <class name="SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase@5d624da6]" name="init" is-config="true" duration-ms="51" started-at="2018-07-31T14:51:43Z" finished-at="2018-07-31T14:51:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="ForgotPasswordTest(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase@5d624da6]" name="ForgotPasswordTest" duration-ms="12419" started-at="2018-07-31T14:51:43Z" data-provider="getData" finished-at="2018-07-31T14:51:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{NewPassword=r123456789, Runmode=Y, ConfirmPassword=r123456789, ValidateText=An email has been sent to your email account with instructions to reset your password. Please check Junk/Spam folders for this message and wait up to 10 minutes for it., Email=Automationdonotuse@mailinator.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
+	at SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase.ForgotPasswordTest(ForgotPasswordTestCase.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1289)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-TU76DCC', ip: '192.168.43.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\RASHMI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 0c2eee801e903d04c018d5a87c94066e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)
+	at SystemMailTracking.keywords.GenericKeywords.navigate(GenericKeywords.java:138)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPasswordTest -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase@5d624da6]" name="initTest" is-config="true" duration-ms="0" started-at="2018-07-31T14:51:43Z" finished-at="2018-07-31T14:51:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase@5d624da6]" name="quit" is-config="true" duration-ms="608" started-at="2018-07-31T14:51:55Z" finished-at="2018-07-31T14:51:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ForgotPasswordTestCase -->
+    </test> <!-- ForgotPassword -->
+    <test name="CreateNewAccount" duration-ms="37716" started-at="2018-07-31T09:21:56Z" finished-at="2018-07-31T09:22:34Z">
+      <class name="SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest@77b52d12]" name="init" is-config="true" duration-ms="62" started-at="2018-07-31T14:51:56Z" finished-at="2018-07-31T14:51:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest@77b52d12]" name="initTest" is-config="true" duration-ms="0" started-at="2018-07-31T14:51:56Z" finished-at="2018-07-31T14:51:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="CreateNewAccount(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest@77b52d12]" name="CreateNewAccount" duration-ms="36857" started-at="2018-07-31T14:51:56Z" data-provider="getData" finished-at="2018-07-31T14:52:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ConfirmPassword=password@12, RepId2=TestRep2, RepId1=TestRep1, ValidateText=Your user account has been created you may now login to the RapidFunnel app.If you have not downloaded the app please do so through the Apple App Store or Google Play. You can also login online at my.prospectbylegalshield.com, Runmode=Y, Phone=9658877498, Additional Notification Email=Additionnotif@mailinator.com, Email=Autonewuser1@mailinator.com, Password=password@12, groupcode=qiRUR5, LastName=New Account, FirstName=Automation, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
+	at SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest.CreateNewAccount(CreateNewAccountTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1289)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Failed to get the email confirmation for newly created account
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
+	at SystemMailTracking.keywords.AppKeywords.VerifyEmailFromInboxNewAccount(AppKeywords.java:323)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewAccount -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest@77b52d12]" name="quit" is-config="true" duration-ms="793" started-at="2018-07-31T14:52:33Z" finished-at="2018-07-31T14:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.CreateNewAccountTest -->
+    </test> <!-- CreateNewAccount -->
+    <test name="ContinueToPayment" duration-ms="46938" started-at="2018-07-31T09:22:34Z" finished-at="2018-07-31T09:23:21Z">
+      <class name="SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@90f6bfd]" name="init" is-config="true" duration-ms="63" started-at="2018-07-31T14:52:34Z" finished-at="2018-07-31T14:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="ContinueToPayment(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@90f6bfd]" name="ContinueToPayment" duration-ms="46187" started-at="2018-07-31T14:52:34Z" data-provider="getData" finished-at="2018-07-31T14:53:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ConfirmPassword=123456, Browser=Chrome, CardNumber=4242424242424242, Password=123456, Additional Notification Email=Additionnotif@mailinator.com, RepId2=TestRep2, RepId1=TestRep1, groupcode=qiRUR5, UserName=Automation, Runmode=Y, SuccessPaymentMessage=Congratulations! You have been upgraded to the RapidFunnel Premium version!, Phone=9658877498, LastName=New Account, AccountName=Automation New Account, FirstName=Automation, PostalCode=751076, Email=Autonewuser2@mailinator.com, CVVCode=623}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
+	at SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest.ContinueToPayment(ContinueToPaymentTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1289)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Object Not Found BillingInfoPostalCode_xpath,
+	Failed to do successful payment during account creation
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
+	at SystemMailTracking.keywords.AppKeywords.VerifyFillingBillingInfo(AppKeywords.java:234)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContinueToPayment -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@90f6bfd]" name="initTest" is-config="true" duration-ms="0" started-at="2018-07-31T14:52:34Z" finished-at="2018-07-31T14:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest@90f6bfd]" name="quit" is-config="true" duration-ms="686" started-at="2018-07-31T14:53:20Z" finished-at="2018-07-31T14:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.ContinueToPaymentTest -->
+    </test> <!-- ContinueToPayment -->
+    <test name="deletepaiduser" duration-ms="46956" started-at="2018-07-31T09:23:21Z" finished-at="2018-07-31T09:24:08Z">
+      <class name="SystemMailTracking.testcases.SessionSuite.deletepaiduser">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deletepaiduser@3a03464]" name="init" is-config="true" duration-ms="38" started-at="2018-07-31T14:53:21Z" finished-at="2018-07-31T14:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deletepaiduser@3a03464]" name="initTest" is-config="true" duration-ms="1" started-at="2018-07-31T14:53:21Z" finished-at="2018-07-31T14:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="deletepaiduserTest(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deletepaiduser@3a03464]" name="deletepaiduserTest" duration-ms="46249" started-at="2018-07-31T14:53:21Z" data-provider="getData" finished-at="2018-07-31T14:54:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, Email=Autonewuser2@mailinator.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
+	at SystemMailTracking.testcases.SessionSuite.deletepaiduser.deletepaiduserTest(deletepaiduser.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1289)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Object Not Found DeleteUserButton_xpath,
+	Failed to delete the trial user
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
+	at SystemMailTracking.keywords.AppKeywords.deletepaiduser(AppKeywords.java:657)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletepaiduserTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deletepaiduser@3a03464]" name="quit" is-config="true" duration-ms="667" started-at="2018-07-31T14:54:07Z" finished-at="2018-07-31T14:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deletepaiduser -->
+    </test> <!-- deletepaiduser -->
+    <test name="deleteTrialuser" duration-ms="31030" started-at="2018-07-31T09:24:08Z" finished-at="2018-07-31T09:24:39Z">
+      <class name="SystemMailTracking.testcases.SessionSuite.deleteTrialuser">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deleteTrialuser@6df97b55]" name="init" is-config="true" duration-ms="36" started-at="2018-07-31T14:54:08Z" finished-at="2018-07-31T14:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="deleteTrialuserTest(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deleteTrialuser@6df97b55]" name="deleteTrialuserTest" duration-ms="30242" started-at="2018-07-31T14:54:08Z" data-provider="getData" finished-at="2018-07-31T14:54:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, Email=Autonewuser1@mailinator.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTrialuserTest -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deleteTrialuser@6df97b55]" name="initTest" is-config="true" duration-ms="0" started-at="2018-07-31T14:54:08Z" finished-at="2018-07-31T14:54:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SessionSuite.deleteTrialuser@6df97b55]" name="quit" is-config="true" duration-ms="748" started-at="2018-07-31T14:54:38Z" finished-at="2018-07-31T14:54:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SessionSuite.deleteTrialuser -->
+    </test> <!-- deleteTrialuser -->
+  </suite> <!-- SessionSuite -->
+  <suite name="SystemEmails" duration-ms="269856" started-at="2018-07-31T09:24:39Z" finished-at="2018-07-31T09:29:08Z">
+    <groups>
+    </groups>
+    <test name="Send Optin Email" duration-ms="52935" started-at="2018-07-31T09:24:39Z" finished-at="2018-07-31T09:25:32Z">
+      <class name="SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest@3551a94]" name="init" is-config="true" duration-ms="176" started-at="2018-07-31T14:54:39Z" finished-at="2018-07-31T14:54:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest@3551a94]" name="initTest" is-config="true" duration-ms="0" started-at="2018-07-31T14:54:39Z" finished-at="2018-07-31T14:54:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="AddNewContactOptin(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest@3551a94]" name="AddNewContactOptin" duration-ms="51985" started-at="2018-07-31T14:54:39Z" data-provider="getData" finished-at="2018-07-31T14:55:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Note=AutoNote, Tag=Auto, ExpectedText=Data saved successfully., Runmode=Y, CompanyName=RapidFunnel, Phone=9658820667, Email=automationcontact1@mailinator.com, Title=Mr., LastName=Contact, City=AutoCity, FirstName=Automation, Address2=AutoAdd2, Address1=AutoAdd1, PostalCode=751016, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewContactOptin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest@3551a94]" name="quit" is-config="true" duration-ms="771" started-at="2018-07-31T14:55:31Z" finished-at="2018-07-31T14:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.AddNewContactOptinTest -->
+    </test> <!-- Send Optin Email -->
+    <test name="Resend Optin Email" duration-ms="49452" started-at="2018-07-31T09:25:32Z" finished-at="2018-07-31T09:26:21Z">
+      <class name="SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest@50f8360d]" name="init" is-config="true" duration-ms="40" started-at="2018-07-31T14:55:32Z" finished-at="2018-07-31T14:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest@50f8360d]" name="initTest" is-config="true" duration-ms="1" started-at="2018-07-31T14:55:32Z" finished-at="2018-07-31T14:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="ReoptinEmail(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest@50f8360d]" name="ReoptinEmail" duration-ms="48634" started-at="2018-07-31T14:55:32Z" data-provider="getData" finished-at="2018-07-31T14:56:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=r123456789, Runmode=Y, UserName=Automationdonotuse@mailinator.com, Email=automationcontact1@mailinator.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReoptinEmail -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest@50f8360d]" name="quit" is-config="true" duration-ms="775" started-at="2018-07-31T14:56:20Z" finished-at="2018-07-31T14:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ReoptinEmailTest -->
+    </test> <!-- Resend Optin Email -->
+    <test name="Send Resource Email" duration-ms="55069" started-at="2018-07-31T09:26:21Z" finished-at="2018-07-31T09:27:16Z">
+      <class name="SystemMailTracking.testcases.SystemEmails.ResourceEmailTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ResourceEmailTest@153f5a29]" name="init" is-config="true" duration-ms="30" started-at="2018-07-31T14:56:21Z" finished-at="2018-07-31T14:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ResourceEmailTest@153f5a29]" name="initTest" is-config="true" duration-ms="1" started-at="2018-07-31T14:56:21Z" finished-at="2018-07-31T14:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="ResourceEmail(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ResourceEmailTest@153f5a29]" name="ResourceEmail" duration-ms="54026" started-at="2018-07-31T14:56:21Z" data-provider="getData" finished-at="2018-07-31T14:57:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{GmailPassword=password@12, Password=r123456789, Runmode=Y, UserName=Automationdonotuse@mailinator.com, Email=xponoacc@gmail.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
+	at SystemMailTracking.testcases.SystemEmails.ResourceEmailTest.ResourceEmail(ResourceEmailTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1289)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Object Not Found GmailInboxclick_xpath,
+	Failed to receive Resource email
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
+	at SystemMailTracking.keywords.AppKeywords.VerifyResourceEmailFromInbox(AppKeywords.java:528)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResourceEmail -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.ResourceEmailTest@153f5a29]" name="quit" is-config="true" duration-ms="1010" started-at="2018-07-31T14:57:15Z" finished-at="2018-07-31T14:57:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.ResourceEmailTest -->
+    </test> <!-- Send Resource Email -->
+    <test name="Broadcast Email" duration-ms="74360" started-at="2018-07-31T09:27:16Z" finished-at="2018-07-31T09:28:31Z">
+      <class name="SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest@61a485d2]" name="init" is-config="true" duration-ms="703" started-at="2018-07-31T14:57:16Z" finished-at="2018-07-31T14:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest@61a485d2]" name="initTest" is-config="true" duration-ms="0" started-at="2018-07-31T14:57:17Z" finished-at="2018-07-31T14:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="BroadCastEmail(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest@61a485d2]" name="BroadCastEmail" duration-ms="72684" started-at="2018-07-31T14:57:17Z" data-provider="getData" finished-at="2018-07-31T14:58:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{GmailPassword=password@12, BroadCastEmailTextContent=Test Content Automation, BroadcastEmailAddress=xponoacc@gmail.com, SentEmailFrom=Rfsupporttest@mailinator.com, Runmode=Y, BroadCastEmailSubject=Test Automation Subject, BroadCastEmailContent=Test Automation Content, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.reflect.InvocationTargetException">
+            <full-stacktrace>
+              <![CDATA[java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at SystemMailTracking.driver.DriverScript.executeKeywords(DriverScript.java:49)
+	at SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest.BroadCastEmail(BroadCastEmailTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1289)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	Object Not Found GmailInboxclick_xpath,
+	Failed to recieve Broadcast email
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at SystemMailTracking.keywords.GenericKeywords.reportFailure(GenericKeywords.java:362)
+	at SystemMailTracking.keywords.AppKeywords.VerifyBroadcastEmailFromInbox(AppKeywords.java:590)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.reflect.InvocationTargetException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BroadCastEmail -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest@61a485d2]" name="quit" is-config="true" duration-ms="971" started-at="2018-07-31T14:58:30Z" finished-at="2018-07-31T14:58:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.BroadCastEmailTest -->
+    </test> <!-- Broadcast Email -->
+    <test name="Delete Contact" duration-ms="37903" started-at="2018-07-31T09:28:31Z" finished-at="2018-07-31T09:29:08Z">
+      <class name="SystemMailTracking.testcases.SystemEmails.deletecontact">
+        <test-method status="PASS" signature="init()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.deletecontact@4590c9c3]" name="init" is-config="true" duration-ms="281" started-at="2018-07-31T14:58:31Z" finished-at="2018-07-31T14:58:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.deletecontact@4590c9c3]" name="initTest" is-config="true" duration-ms="0" started-at="2018-07-31T14:58:31Z" finished-at="2018-07-31T14:58:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="deletecontactTest(java.util.Hashtable)[pri:0, instance:SystemMailTracking.testcases.SystemEmails.deletecontact@4590c9c3]" name="deletecontactTest" duration-ms="36905" started-at="2018-07-31T14:58:31Z" data-provider="getData" finished-at="2018-07-31T14:59:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Runmode=Y, Email=automationcontact1@mailinator.com, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecontactTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:SystemMailTracking.testcases.SystemEmails.deletecontact@4590c9c3]" name="quit" is-config="true" duration-ms="716" started-at="2018-07-31T14:59:08Z" finished-at="2018-07-31T14:59:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- SystemMailTracking.testcases.SystemEmails.deletecontact -->
+    </test> <!-- Delete Contact -->
+  </suite> <!-- SystemEmails -->
+</testng-results>
